@@ -44,9 +44,9 @@ export const motion3 = {
 }
 
 export const glowText = {
-      initial:{'box-shadow':'0 0 1px #2ecc71'},
+      initial:{'text-shadow':'0 0 1px #2ecc71'},
       enter:{
-       'box-shadow':'0 0 16px #2ecc71',
+       'text-shadow':'0 0 16px #2ecc71',
         transition:{
             duration:1000,
             repeat: Infinity,

@@ -14,7 +14,7 @@ import {motion1,motion2,motion3,glowText} from "../VueMotions/montions"
       <div class="flex h-full items-center justify-center relative">
          <h1 
          v-motion="glowText"
-         class="lg:text-5xl text-3xl text-white uppercase font-TW text-center rounded-md p-2">
+         class="lg:text-5xl text-3xl text-white uppercase font-TW text-center rounded-md">
                welcome to entech software innovations
          </h1>
       </div>
