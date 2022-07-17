@@ -2,7 +2,7 @@
    import {ref} from 'vue'
 
    let ch= ref(false)
-   let show= ref(true)
+   let show= ref(false)
 
    interface route{name:string,to:string,}
    
