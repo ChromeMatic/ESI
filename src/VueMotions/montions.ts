@@ -4,9 +4,9 @@ export const motion1 = {
         x:0
     },
     enter:{
-        y:4,x:2,
+        y:-3,x:3,
         transition:{
-            duration:1000,
+            duration:750,
             repeat: Infinity,
             repeatType: 'reverse',
         }
@@ -19,9 +19,9 @@ export const motion2 = {
         x:0
     },
     enter:{
-        y:2,x:4,
+        y:3,x:-3,
         transition:{
-            duration:1000,
+            duration:750,
             repeat: Infinity,
             repeatType: 'reverse',
         }
@@ -34,13 +34,13 @@ export const motion3 = {
         x:0
     },
     enter:{
-        y:3,x:1,
+        y:-4,x:2,
         transition:{
-            duration:1000,
+            duration:750,
             repeat: Infinity,
             repeatType: 'reverse',
-        }
-    }
+        }  
+    },
 }
 
 export const glowText = {
@@ -48,7 +48,7 @@ export const glowText = {
       enter:{
        'text-shadow':'0 0 16px #2ecc71',
         transition:{
-            duration:1000,
+            duration:800,
             repeat: Infinity,
             repeatType: 'reverse',
         }
