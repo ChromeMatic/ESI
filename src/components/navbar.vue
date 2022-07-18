@@ -26,13 +26,13 @@
             </div>
 
             <!-- Visible on Desktop -->
-            <div class="hidden md:flex space-x-2 uppercase font-TW">
+            <div class="hidden md:flex space-x-6 uppercase font-TW">
                 <div
-                class="transition-all rounded hover:bg-indigo-300" 
+                class="transition-all rounded hover:text-indigo-500" 
                 v-for="link in Links" 
                 :key="link.name"
                 >
-                    <router-link class="px-6 py-1" :to="link.to">{{link.name}}</router-link>
+                    <router-link :to="link.to">{{link.name}}</router-link>
                 </div>
             </div>
 

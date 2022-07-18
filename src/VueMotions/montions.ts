@@ -1,12 +1,11 @@
 export const motion1 = {
     initial:{
-        y:0,
         x:0
     },
     enter:{
-        y:-3,x:3,
+        x:-4,
         transition:{
-            duration:750,
+            duration:3000,
             repeat: Infinity,
             repeatType: 'reverse',
         }
@@ -16,12 +15,11 @@ export const motion1 = {
 export const motion2 = {
     initial:{
         y:0,
-        x:0
     },
     enter:{
-        y:3,x:-3,
+        y:3,
         transition:{
-            duration:750,
+            duration:3000,
             repeat: Infinity,
             repeatType: 'reverse',
         }
@@ -29,14 +27,11 @@ export const motion2 = {
 }
 
 export const motion3 = {
-    initial:{
-        y:0,
-        x:0
-    },
+    initial:{x:0},
     enter:{
-        y:-4,x:2,
+        x:4,
         transition:{
-            duration:750,
+            duration:3000,
             repeat: Infinity,
             repeatType: 'reverse',
         }  
@@ -44,13 +39,37 @@ export const motion3 = {
 }
 
 export const glowText = {
-      initial:{'text-shadow':'0 0 1px #2ecc71'},
+      initial:{'text-shadow':'0 0 2px #fff'},
       enter:{
-       'text-shadow':'0 0 16px #2ecc71',
+       'text-shadow':'0 0 8px #fff',
         transition:{
-            duration:800,
+            duration:4000,
             repeat: Infinity,
             repeatType: 'reverse',
         }
       }
+}
+
+export const slideLeft = {
+    initial:{x:0},
+    enter:{
+        x:4,
+        transition:{
+            duration:2000,
+            repeat: Infinity,
+            repeatType: 'reverse',
+        }
+    }
+}
+
+export const slideRight = {
+    initial:{x:0},
+    enter:{
+        x:-4,
+        transition:{
+            duration:2000,
+            repeat: Infinity,
+            repeatType: 'reverse',
+        }
+    }
 }
