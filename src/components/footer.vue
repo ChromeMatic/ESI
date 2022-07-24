@@ -4,10 +4,10 @@ const darkMode = UseThemeStore();
 </script>
 
 <template>
- <div class="lg:px-4 px-2 py-2 w-full flex flex-col space-y-2 BlurFill bg-opacity-50">
+ <div class="lg:px-4 px-2 py-2 w-full flex flex-col space-y-1 BlurFill bg-opacity-50">
     
     <div 
-     :class="darkMode.isDark ? 'bg-innerDark' : 'transition-all duration-75 bg-purple-900'"
+     :class="darkMode.isDark ? 'bg-innerDark transition-all' : 'transition-all bg-purple-900'"
      class="rounded-md  bg-opacity-80 BlurFill w-full px-2 py-4 flex flex-col"
     >
       
@@ -15,12 +15,19 @@ const darkMode = UseThemeStore();
          <a href="https://www.instagram.com/esi_ja876/" target="_blank">
             <img src="../assets/instagram.svg">
          </a>
-         <img src="../assets/twitter.svg" alt="">
+         <a href="https://twitter.com/EntechSoftware" target="_blank">
+            <img src="../assets/twitter.svg" alt="">
+         </a>
       </div>
 
-      <div class="flex space-x-4 justify-center items-center w-full py-4 font-TW uppercase text-white">
-         <h1>Our number</h1>
+      <div class="flex space-x-4 justify-center items-center w-full py-4 font-TW capitalize text-white">
+         <img src="../assets/phone.svg"/>
          <h1>(876)-406-9490</h1>
+      </div>
+
+       <div class="flex space-x-4 justify-center items-center w-full py-4 font-TW text-white">
+         <img src="../assets/mail.svg"/>
+         <h1>entechsoftwareinnovations@gmail.com</h1>
       </div>
 
       <hr class="w-full p-0 bg-white"/>

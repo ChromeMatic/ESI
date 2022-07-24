@@ -21,7 +21,7 @@
     <div class="lg:px-4 px-2 py-2 sticky top-0 z-50 w-full flex flex-col space-y-2 BlurFill bg-opacity-50">
 
         <nav
-         :class="darkMode.isDark ? 'bg-innerDark':'transition-all duration-75 bg-purple-800' " 
+         :class="darkMode.isDark ? 'bg-innerDark transition-all':'transition-all bg-purple-800' " 
          class="w-full px-8 py-4 rounded-md  text-white space-x-4 bg-opacity-80 
          BlurFill flex justify-between items-center"
         >

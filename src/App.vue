@@ -8,8 +8,8 @@ const darkMode = UseThemeStore();
 
 <template>
   <div
-   :class="darkMode.isDark ? 'bg-darkMode' 
-   :'transition-all duration-75 bg-gradient-to-tl from-darkMode to-purple-900'" 
+   :class="darkMode.isDark ? 'bg-darkMode ' 
+   :'transition-all duration-100 bg-gradient-to-tl from-darkMode to-purple-900'"
   >
     <Navbar/>
     <router-view v-slot="{ Component }">
