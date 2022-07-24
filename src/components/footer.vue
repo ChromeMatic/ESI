@@ -32,10 +32,9 @@ const darkMode = UseThemeStore();
 
       <hr class="w-full p-0 bg-white"/>
 
-      <h1 class="text-center font-TW p-1 text-white uppercase mt-2">
+      <h1 class="text-center font-TW font-semibold p-1 text-white uppercase mt-2">
          © 2022 ALL RIGHTS BELONG TO Entech Software Innovations
       </h1>
-
     </div>
 
  </div>
