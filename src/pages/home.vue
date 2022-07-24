@@ -37,7 +37,7 @@
     
     <div class="flex flex-col justify-center items-center py-4 lg:px-8 px-4">
 
-      <h1 class="text-5xl uppercase text-white font-TW lg:py-16 py-8">
+      <h1 class="lg:text-5xl text-3xl uppercase text-white font-TW lg:py-16 py-8">
        What we do
       </h1>
 
@@ -117,13 +117,14 @@
               learn more
             </button>
           </div>
+          
          </div>
 
       </div>
 
       <div class="flex flex-col justify-center items-center space-y-4 py-4 lg:px-8 px-4 lg:mt-12 mt-4">
 
-        <h1 class="text-5xl uppercase text-white font-TW lg:py-4 py-4">
+        <h1 class="lg:text-5xl text-3xl text-center uppercase text-white font-TW lg:py-4 py-4">
           Get to Know us
         </h1>
         
