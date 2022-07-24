@@ -89,7 +89,7 @@ import {UseThemeStore} from "../store/index"
       >
         <img :src="item.img" class="h-32 w-32" alt="">
 
-        <h1 class="text-xl uppercase">
+        <h1 class="text-xl uppercase text-center">
           {{item.name}}
         </h1>
         
