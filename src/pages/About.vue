@@ -22,12 +22,12 @@ import {UseThemeStore} from "../store/index"
   },
   {
     name:'Alrick Franklin',
-    img:'/gamer.png',
+    img:'/alrick.jpg',
     role:'Executive Director / Frontend Developer / Mobile Developer'
   },
   {
     name:'Armani Brown',
-    img:'/hacker.png',
+    img:'/armani.jpg',
     role:'Chief Operating Officer / Co-founder / DevOps Expert'
   },
   {
@@ -47,7 +47,7 @@ import {UseThemeStore} from "../store/index"
   },
   {
     name:'Leo Mitchell',
-    img:'/avatar.png',
+    img:'/leovo.jpeg',
     role:'Chief Marketing Officer CMO'
   },
   {
@@ -87,7 +87,7 @@ import {UseThemeStore} from "../store/index"
        class="w-full py-2 px-6 rounded-md flex flex-col justify-center items-center text-white
        transition-all hover:scale-y-110 hover:scale-x-110 space-y-4"
       >
-        <img :src="item.img" class="h-32 w-32" alt="">
+        <img :src="item.img" class="rounded-full object-contain h-48 w-48" alt="">
 
         <h1 class="text-xl uppercase text-center">
           {{item.name}}
