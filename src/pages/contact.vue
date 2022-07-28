@@ -1,15 +1,23 @@
 <script setup lang="ts">
  import { motion1 } from "../VueMotions/montions"
- import {UseThemeStore} from "../store/index" 
-
+ import {UseThemeStore} from "../store/index"
+ 
  const darkMode = UseThemeStore();
 
  function submit(){}
 
+ type submitFrom ={ firstName:String, lastName:String, phone:String, typeOfServices:String, details:String}
+
+ let From:submitFrom={
+   firstName:"", lastName:'',
+   phone:'', typeOfServices:'',
+   details:''
+ }
+
 </script>
 
 <template>
-    <section class="flex flex-col space-y-2 font-TW">
+   <section class="flex flex-col space-y-2 font-TW">
 
      <h1 class="uppercase text-center lg:text-5xl text-4xl text-white py-4">
       contact us
@@ -22,12 +30,13 @@
      <div class="flex flex-col space-y-4 w-full px-8 py-4 justify-center items-center">
 
        <h1 class="text-3xl uppercase font-TW text-white font-semibold"> 
-        contact from
+        contact from 
        </h1>
 
        <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 space-x-0 lg:space-x-4">
 
           <input 
+             v-model="From.firstName"
             :class="darkMode.getTheme ? 'bg-innerDark':'bg-purple-900'"
             class="  form-control block w-96 px-3 py-1.5 text-base 
             font-normal text-white bg-clip-padding border 
@@ -37,8 +46,9 @@
           placeholder="Please enter firstname eg. John" 
          />
 
-          <input 
-          :class="darkMode.getTheme ? 'bg-innerDark':'bg-purple-900'"
+          <input
+           v-model="From.lastName" 
+           :class="darkMode.getTheme ? 'bg-innerDark':'bg-purple-900'"
            class=" form-control block w-96 px-3 py-1.5 text-base
             font-normal text-white bg-clip-padding border 
             border-solid border-gray-300 rounded transition ease-in-out m-0
@@ -48,6 +58,7 @@
           />
 
           <input 
+            v-model="From.phone"
             :class="darkMode.getTheme ? 'bg-innerDark':'bg-purple-900'"
             class=" form-control block w-96 px-3 py-1.5 text-base
             font-normal text-white bg-clip-padding border 
@@ -84,5 +95,5 @@
      
      <div class="lg:py-8 py-4"></div>
 
-  </section>
+   </section>
 </template>
