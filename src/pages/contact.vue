@@ -53,7 +53,7 @@
             font-normal text-white bg-clip-padding border 
             border-solid border-gray-300 rounded transition ease-in-out m-0
             focus:border-blue-600 focus:outline-none" 
-           type="number" 
+           type="text" 
            placeholder="Please enter phone number eg. 876-###-####" 
           />
 
