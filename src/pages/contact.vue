@@ -6,7 +6,7 @@
 
  function submit(){}
 
- type submitFrom ={ firstName:String, lastName:String, phone:String, typeOfServices:String, details:String}
+ type submitFrom ={ firstName:String, lastName:String, phone:String, typeOfServices:String, details:String }
 
  let From:submitFrom={
    firstName:"", lastName:'',
