@@ -1,6 +1,6 @@
 <script setup lang="ts">
  import { motion1 } from "../VueMotions/montions"
- import {UseThemeStore} from "../store/index"
+ import { UseThemeStore } from "../store/index"
  
  const darkMode = UseThemeStore();
 
